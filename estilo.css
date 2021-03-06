@@ -1,0 +1,107 @@
+:root
+{
+    --corPrimaria: #262b2b;
+    --corSecundaria: white ;
+    --corBorda: rgb(175, 175, 175);
+    --bordaEstilizada: 25px 0px 25px 0px;
+}
+*
+{
+    background: var(--corPrimaria);
+    color: var(--corSecundaria);
+    border-color: var(--corBorda);
+    font-family: sans-serif;
+    margin: 6px 0px;
+}
+body
+{
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header
+{
+    font-size: 35px;
+    padding: 5px;
+    border: 4px solid var(--corBorda);
+    border-radius: var(--bordaEstilizada);
+}
+nav
+{
+    border: 4px solid var(--corBorda);
+    border-radius: var(--bordaEstilizada);
+    padding: 0px;
+}
+nav button
+{
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    margin: 0;
+}
+nav button:nth-child(1)
+{
+    border-radius: 17px 0px 0px 0px;
+}
+nav button:nth-child(2)
+{
+    border-radius: 0px 0px 17px 0px;
+}
+nav button:hover
+{
+    background: var(--corSecundaria);
+    color: var(--corPrimaria);
+}
+form
+{
+    border: 5px solid var(--corBorda);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+label
+{
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+input , .radioBox
+{
+    margin-top: 0px;
+    border: 3px solid var(--corBorda);
+    border-radius: var(--bordaEstilizada);
+    padding: 3px 10px;
+    font-size: 17px;
+    background: var(--corSecundaria);
+    color: var(--corPrimaria);
+    width: 400px;
+    text-align: center;
+}
+.radioBox input
+{
+    width: 15px;
+    cursor: pointer;
+}
+.radio
+{
+    display: inline;
+    background: var(--corSecundaria);
+    color: var(--corPrimaria);
+    padding: 3px 14px;
+    border-radius: var(--bordaEstilizada);
+}
+input[type="submit"]
+{
+    cursor: pointer;
+    width: auto;
+    background: var(--corPrimaria);
+    color: var(--corSecundaria);
+    font-size: 24px;
+}
+input[type="submit"]:hover
+{
+    background: var(--corSecundaria);
+    color: var(--corPrimaria);
+}

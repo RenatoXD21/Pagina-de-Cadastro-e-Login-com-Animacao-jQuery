@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Cadastro e Login</title>
+
+    <link rel="stylesheet" type="text/css" href="estilo.css"/>
 </head>
 <body>
 
@@ -21,9 +23,15 @@
         <label>Data de Nascimento</label>
         <input type="date" name="data" required/>
         
-        <label>Genero</label>
-        <span>Masculino</span> <input type="radio" name="genero" value="Masculino" required/>
-        <span>Feminino</span> <input type="radio" name="genero" value="Feminino" required/>
+        <label>Gênero</label>
+        <div class="radioBox">
+            <div class="radio">
+                Masculino <input type="radio" name="genero" value="Masculino" required/>
+            </div>
+            <div class="radio">
+                Feminino <input type="radio" name="genero" value="Feminino" required/>
+            </div>
+        </div>
 
         <label>Email</label>
         <input type="email" name="email" required/>
