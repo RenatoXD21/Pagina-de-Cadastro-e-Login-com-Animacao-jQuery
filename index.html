@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro e Login</title>
+</head>
+<body>
+
+    <header>Cadastro e Login</header>
+
+    <nav>
+        <button>Cadastro</button>
+        <button>Login</button>
+    </nav>
+
+    <form id="Cadastro" action="#" method="post">
+
+        <label>Nome</label>
+        <input type="text" name="nome" required/>
+
+        <label>Data de Nascimento</label>
+        <input type="date" name="data" required/>
+        
+        <label>Genero</label>
+        <span>Masculino</span> <input type="radio" name="genero" value="Masculino" required/>
+        <span>Feminino</span> <input type="radio" name="genero" value="Feminino" required/>
+
+        <label>Email</label>
+        <input type="email" name="email" required/>
+
+        <label>Senha</label>
+        <input type="password" name="senha" required/>
+
+        <label>Confirmar Senha</label>
+        <input type="password" name="confirmar" required/>
+
+        <input type="submit" value="Cadastrar"/>
+
+    </form>
+
+    <form id="Login" action="#" method="post">
+
+        <label>Email</label>
+        <input type="email" name="email" required/>
+
+        <label>Senha</label>
+        <input type="password" name="senha" required/>
+
+        <input type="submit" value="Entrar"/>
+
+    </form>
+    
+</body>
+</html>
