@@ -15,7 +15,7 @@
         <button>Login</button>
     </nav>
 
-    <form id="Cadastro" action="#" method="post">
+    <form id="Cadastro" action="#" method="post" >
 
         <label>Nome</label>
         <input type="text" name="nome" required/>
@@ -36,23 +36,29 @@
         <label>Email</label>
         <input type="email" name="email" required/>
 
-        <label>Senha</label>
-        <input type="password" name="senha" required/>
-
+        <label class="senhaLabel">Senha</label>
+        <div class="senhaBox">
+            <input type="password" name="senha" required/>
+            <img src="img/lock.png" title="Mostrar Senha"/>
+        </div>
+        
         <label>Confirmar Senha</label>
         <input type="password" name="confirmar" required/>
-
+        
         <input type="submit" value="Cadastrar"/>
-
+        
     </form>
-
-    <form id="Login" action="#" method="post">
-
+    
+    <form id="Login" action="#" method="post" >
+        
         <label>Email</label>
         <input type="email" name="email" required/>
-
-        <label>Senha</label>
-        <input type="password" name="senha" required/>
+        
+        <label class="senhaLabel">Senha</label>
+        <div class="senhaBox">
+            <input type="password" name="senha" required/>
+            <img src="img/lock.png" title="Mostrar Senha"/>
+        </div>
 
         <input type="submit" value="Entrar"/>
 

@@ -105,3 +105,24 @@ input[type="submit"]:hover
     background: var(--corSecundaria);
     color: var(--corPrimaria);
 }
+.senhaLabel
+{
+    margin-bottom: -20px;
+    z-index: 1;
+}
+.senhaBox
+{
+    flex-direction: row;
+}
+.senhaBox input
+{
+    width: 370px;
+    vertical-align: middle;
+}
+.senhaBox img
+{
+    vertical-align: bottom;
+    width: 25px;
+    height: 40px;
+    cursor: pointer;
+}
