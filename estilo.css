@@ -48,7 +48,7 @@ nav button:nth-child(2)
 {
     border-radius: 0px 0px 17px 0px;
 }
-nav button:hover
+.selecionado
 {
     background: var(--corSecundaria);
     color: var(--corPrimaria);
@@ -60,7 +60,7 @@ form
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
+    padding: 10px 60px;
 }
 label
 {
@@ -107,16 +107,15 @@ input[type="submit"]:hover
 }
 .senhaLabel
 {
-    margin-bottom: -20px;
+    margin-bottom: -19.5px;
     z-index: 1;
 }
 .senhaBox
 {
-    flex-direction: row;
+    margin-left: 30px;
 }
 .senhaBox input
 {
-    width: 370px;
     vertical-align: middle;
 }
 .senhaBox img
